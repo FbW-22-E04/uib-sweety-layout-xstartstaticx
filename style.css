@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2.5rem;
+  align-items: center;
+}
+h1 {
+  font-size: 3.5rem;
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  color: #141641;
+}
+.navUl {
+  display: flex;
+  list-style-type: none;
+  font-size: 2rem;
+}
+.navUl li {
+  background-color: #eeeeee;
+  padding: 1rem;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.hero {
+  background-image: url(/images/sweetBg.jpg);
+  height: 40rem;
+  background-position: bottom center;
+  background-size: 700px;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 4rem 0 2rem;
+}
+h2 {
+  font-size: 2.5em;
+}
+span {
+  color: #f05a96;
+}
+button {
+  width: 13rem;
+  background-color: #f05a96;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.container {
+  background-color: #eeeeed;
+}
+.donut {
+  background-color: #e2fcf5;
+}

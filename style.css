@@ -26,16 +26,41 @@ h1 {
   font-weight: 500;
   color: #141641;
 }
+.center-display {
+  display: none;
+}
 .navUl {
   display: flex;
   list-style-type: none;
+}
+.navUl i {
   font-size: 2rem;
 }
-.navUl li {
+.navUl div {
   background-color: #eeeeee;
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
   margin-left: 10px;
   border-radius: 5px;
+  align-self: center;
+}
+.dropdown {
+  position: relative;
+}
+.navUl div:hover {
+  background-color: #fc247d;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  list-style: none;
+  left: 2rem;
+  top: 4rem;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: yellow;
 }
 
 /* HERO SECTION */
@@ -72,6 +97,7 @@ button {
   margin-top: 2rem;
   border: 2px solid black;
 }
+
 /* MAIN SECTION */
 .container {
   background-color: #eeeeed;
@@ -81,7 +107,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 10px 10px 0;
 }
 .donut img {
   width: 15rem;
@@ -99,7 +125,48 @@ button {
   line-height: 3rem;
   color: #76726e;
   padding: 0 2rem;
+  text-align: center;
 }
 .donut button {
   margin-bottom: 4rem;
+}
+
+/* TABLET VIEW */
+@media (min-width: 48em) {
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    height: 42rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+  .donut-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto 3rem;
+  }
+  .donut {
+    flex-grow: 1;
+    flex-basis: 30%;
+    margin-bottom: 1rem;
+  }
+  .donut button {
+    margin-bottom: 3rem;
+  }
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 62em) {
+  .center-display {
+    display: block;
+  }
+  .centerUl {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+  }
+  .dropdown {
+    display: none;
+  }
 }

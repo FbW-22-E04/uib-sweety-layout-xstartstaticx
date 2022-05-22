@@ -42,12 +42,12 @@ h1 {
 .hero-section {
   background-image: url(/images/sweetBg.jpg);
   background-repeat: no-repeat;
-  height: 40rem;
+  height: 50rem;
   background-position: bottom center;
   background-size: 70rem;
   display: flex;
   flex-direction: column;
-  padding: 7rem 5rem 0 4rem;
+  padding: 17rem 5rem 0 4rem;
 }
 h2 {
   font-size: 3rem;

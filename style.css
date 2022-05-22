@@ -48,6 +48,7 @@ h1 {
 }
 .navUl div:hover {
   background-color: #fc247d;
+  color: white;
 }
 .dropdown-content {
   display: none;
@@ -59,9 +60,9 @@ h1 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown-content a:hover {
+/* .dropdown-content a:hover {
   background-color: yellow;
-}
+} */
 
 /* HERO SECTION */
 .hero-section {
@@ -165,6 +166,22 @@ button {
     display: flex;
     list-style-type: none;
     gap: 1rem;
+  }
+  .centerUl a:link,
+  .centerUl a:visited {
+    text-decoration: none;
+    color: #141641;
+  }
+  .centerUl a:hover {
+    text-decoration: underline #fc247d 5px;
+  }
+  .centerUl a:active {
+    text-decoration: overline #fc247d 5px;
+  }
+  .centerUl li {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: 10px;
   }
   .dropdown {
     display: none;
